@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- fontawesome icon CSS File -->
+    <link href="css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- animation CSS File -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+      
+    <title>KO</title>
+  </head>
+  
+  <body class="slanted-bg">
+  
+    <header id="header" class="sticky-top">
+
+      <div class="container p-0">
+      <nav class="navbar navbar-expand-md p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" style="margin-top: -15px" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Login</a></li>
+          <li class="nav-item active"><a class="nav-link" href="student.html">Student Joining Link</a></li>
+          <li class="nav-item"><a class="nav-link" href="hire-master.html">Hiring Master</a></li>
+        </ul>
+      </div>
+      </div>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+  
+  <!-- End Header -->
+  
+  <section class="student-joining">
+    <div class="octagon-wrap wow jackInTheBox animated infinite" data-wow-duration="3s">
+      <div class="octagon"></div>
+    </div>
+    <div class="octagon-wrap2 wow jackInTheBox animated infinite" data-wow-duration="3s" data-wow-delay="2s">
+      <div class="octagon"></div>
+    </div>
+    <!-- container -->
+    <div class="container">
+
+      <div>
+        <div class="card">
+          <!-- form-header -->
+          <div class="card-header">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button">
+                Candidate Form
+              </button>
+            </h2>
+          </div>
+      
+          <div>
+            
+            <div class="card-body">
+              <!-- form -->
+              <form id="registration_form" method="post" action=""> 
+                <div class="row mt-2 mb-2">
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_fname"><span class="text-danger">*</span>First Name</label>
+                      <input type="text" class="form-control" id="form_fname" >
+                      <span class="error_form" id="fname_error_message"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_mname">Middle Name</label>
+                      <input type="text" class="form-control" id="form_mname" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_sname"><span class="text-danger">*</span>Last Name</label>
+                      <input type="text" class="form-control" id="form_sname">
+                      <span class="error_form" id="sname_error_message"></span>
+                    </div>
+                  </div>
+                
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group d-flex flex-wrap">
+                      <label for="form_gender" style="width:100%;">Gender</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check  ml-3">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Female
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_blocation"><span class="text-danger">*</span>Base Location</label>
+                      <select class="form-select" aria-label="Default select example" id="form_blocation">
+                        <option selected></option>
+                        <option value="1">Sample</option>
+                        <option value="2">Sample</option>
+                      </select>
+                      <span class="error_form" id="blocation_error_message"></span>
+                    </div>
+                  </div>
+                  
+                
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_father_name"><span class="text-danger">*</span>Father Name</label><br/>
+                      <input type="text" class="form-control" id="form_father_name" >
+                      <span class="error_form" id="father_name_error_message"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_maritual"><span class="text-danger">*</span>Maritual Status</label>
+                      <select class="form-select" aria-label="Default select example" id="form_maritual">
+                        <option selected></option>
+                        <option value="1">Married</option>
+                        <option value="2">Unmarried</option>
+                      </select>
+                      <span class="error_form" id="maritual_error_message"></span>
+                    </div>
+                  </div>
+                
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_perm_addr"><span class="text-danger">*</span>Permanent Address</label>
+                      <input type="text" class="form-control" id="form_perm_addr" >
+                      <span class="error_form" id="perm_addr_error_message"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_perm_city"><span class="text-danger">*</span>City</label>
+                      <input type="text" class="form-control" id="form_perm_city" >
+                      <span class="error_form" id="perm_city_error_message"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_perm_state"><span class="text-danger">*</span>State</label>
+                      <input type="text" class="form-control" id="form_perm_state" >
+                      <span class="error_form" id="perm_state_error_message"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_perm_pincode"><span class="text-danger">*</span>Pincode</label>
+                      <input type="text" class="form-control" id="form_perm_pincode" >
+                      <span class="error_form" id="perm_pincode_error_message"></span>
+                    </div>
+                  </div>
+                
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_pres_addr"><span class="text-danger">*</span>Present Address</label>
+                      <input type="text" class="form-control" id="form_pres_addr" >
+                      <span class="error_form" id="pres_addr_error_message"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_pres_city"><span class="text-danger">*</span>City</label>
+                      <input type="text" class="form-control" id="form_pres_city" >
+                      <span class="error_form" id="pres_city_error_message"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_pres_state"><span class="text-danger">*</span>State</label>
+                      <input type="text" class="form-control" id="form_pres_state" >
+                      <span class="error_form" id="pres_state_error_message"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_pres_pincode"><span class="text-danger">*</span>Pincode</label>
+                      <input type="text" class="form-control" id="form_pres_pincode" >
+                      <span class="error_form" id="pres_pincode_error_message"></span>
+                    </div>
+                  </div>
+               
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_emergencyName">Emergency Name #1</label>
+                      <input type="text" class="form-control" id="form_emergencyName" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_emergencyPhone">Phone No #1</label>
+                      <input type="text" class="form-control" id="form_emergencyPhone" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_emergencyRelation">Relation #1</label>
+                      <input type="text" class="form-control" id="form_emergencyRelation" >
+                    </div>
+                  </div>
+                
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_emergencyName2">Emergency Name #2</label>
+                      <input type="text" class="form-control" id="form_emergencyName2" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_emergencyPhone2">Phone No #2</label>
+                      <input type="text" class="form-control" id="form_emergencyPhone2" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_emergencyRelation2">Relation #2</label>
+                      <input type="text" class="form-control" id="form_emergencyRelation2" >
+                    </div>
+                  </div>
+                
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_dob"><span class="text-danger">*</span>DOB</label>
+                      <input type="date" class="form-control" id="form_dob" >
+                      <span class="error_form" id="dob_error_message"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_doj"><span class="text-danger">*</span>DOJ</label>
+                      <input type="date" class="form-control" id="form_doj" >
+                      <span class="error_form" id="doj_error_message"></span>
+                    </div>
+                  </div>
+                  
+                
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_email"><span class="text-danger">*</span>Personal Email</label>
+                      <input type="email" class="form-control" id="form_email" >
+                      <span class="error_form" id="email_error_message"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_phone"><span class="text-danger">*</span>Personal Phone</label>
+                      <input type="text" class="form-control" id="form_phone" >
+                      <span class="error_form" id="phone_error_message"></span>
+                    </div>
+                  </div>
+                
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_aadhar">Aadhar Card No</label>
+                      <input type="email" class="form-control" id="form_aadhar" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_pan"><span class="text-danger">*</span>PAN #</label>
+                      <input type="text" class="form-control" id="form_pan" >
+                      <span class="error_form" id="pan_error_message"></span>
+                    </div>
+                  </div>
+                
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_uan">UAN #</label>
+                      <input type="email" class="form-control" id="form_uan" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_esic">ESIC #</label>
+                      <input type="text" class="form-control" id="form_esic" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_passport">Passport #</label>
+                      <input type="email" class="form-control" id="form_passport" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_expiryDate">Expiry Date</label>
+                      <input type="date" class="form-control" id="form_expiryDate" >
+                    </div>
+                  </div>
+               
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_graduation">Graduation</label><br/>
+                      <select class="form-select" aria-label="Default select example" id="form_graduation">
+                        <option selected></option>
+                        <option value="1">Sample</option>
+                        <option value="2">Sample</option>
+                       
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_postGraduation">Post Graduation</label><br/>
+                      <select class="form-select" aria-label="Default select example" id="form_postGraduation">
+                        <option selected></option>
+                        <option value="1">Sample</option>
+                        <option value="2">Sample</option>
+                       
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_workExp">Work Exp.(in Years)</label>
+                      <input type="text" class="form-control" id="form_workExp" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_voterId">Voter Id No</label>
+                      <input type="text" class="form-control" id="form_voterId" >
+                    </div>
+                  </div>
+                
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_passport2">Passport</label>
+                      <input type="file" class="form-control" id="form_passport2" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                      <label for="form_photo">Photo</label>
+                      <input type="file" class="form-control" id="form_photo">
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-right">
+                    <!-- <button class="btn btn-primary pt-1 pb-1 pr-3 pl-3 mt-3" style="font-size: 13px;">Final Submit</button> -->
+                    <input type="submit" value="Register" name="" class="btn px-3 py-1" style="background: #008dd1; color: #fff;">
+                  </div>
+                </div>
+              </div>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+
+
+      
+    </div>
+  </section>
+
+
+
+  <!-- <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/fontawesome.min.js" type="text/javascript"></script>
+	<script src="js/wow.min.js" type="text/javascript"></script>
+  
+
+
+
+  <script type="text/javascript">
+    $(function() {
+
+       $("#fname_error_message").hide();
+       $("#sname_error_message").hide();
+       $("#blocation_error_message").hide();
+       $("#father_name_error_message").hide();
+       $("#maritual_error_message").hide();
+       $("#perm_addr_error_message").hide();
+       $("#perm_city_error_message").hide();
+       $("#perm_state_error_message").hide();
+       $("#perm_pincode_error_message").hide();
+       $("#pres_addr_error_message").hide();
+       $("#pres_city_error_message").hide();
+       $("#pres_state_error_message").hide();
+       $("#pres_pincode_error_message").hide();
+       $("#dob_error_message").hide();
+       $("#doj_error_message").hide();
+       $("#phone_error_message").hide();
+       $("#email_error_message").hide();
+       $("#pan_error_message").hide();
+
+
+       
+       $("#password_error_message").hide();
+       $("#retype_password_error_message").hide();
+
+       var error_fname = false;
+       var error_sname = false;
+       var error_blocation = false;
+       var error_fatherName = false;
+       var error_maritual = false;
+       var error_permAddr = false;
+       var error_permCity = false;
+       var error_permState = false;
+       var error_permPincode = false;
+       var error_presAddr = false;
+       var error_presCity = false;
+       var error_presState = false;
+       var error_presPincode = false;
+       var error_dob = false;
+       var error_doj = false;
+       var error_phone = false;
+       var error_email = false;
+       var pan_email = false;
+
+       
+       var error_password = false;
+       var error_retype_password = false;
+
+       $("#form_fname").focusout(function(){
+          check_fname();
+       });
+       $("#form_sname").focusout(function() {
+          check_sname();
+       });
+       $("#form_blocation").focusout(function() {
+          check_blocation();
+       });
+       $("#form_father_name").focusout(function() {
+          check_fatherName();
+       });
+       $("#form_maritual").focusout(function() {
+          check_maritual();
+       });
+       $("#form_perm_addr").focusout(function() {
+          check_permAddr();
+       });
+       $("#form_perm_city").focusout(function() {
+          check_permCity();
+       });
+       $("#form_perm_state").focusout(function() {
+          check_permState();
+       });
+       $("#form_perm_pincode").focusout(function() {
+          check_permPincode();
+       });
+       $("#form_pres_addr").focusout(function() {
+          check_presAddr();
+       });
+       $("#form_pres_city").focusout(function() {
+          check_presCity();
+       });
+       $("#form_pres_state").focusout(function() {
+          check_presState();
+       });
+       $("#form_pres_pincode").focusout(function() {
+          check_presPincode();
+       });
+       $("#form_dob").focusout(function() {
+          check_dob();
+       });
+       $("#form_doj").focusout(function() {
+          check_doj();
+       });
+       $("#form_phone").focusout(function() {
+          check_phone();
+       });
+       $("#form_email").focusout(function() {
+          check_email();
+       });
+       $("#form_pan").focusout(function() {
+          check_pan();
+       });
+
+
+
+       
+       $("#form_password").focusout(function() {
+          check_password();
+       });
+       $("#form_retype_password").focusout(function() {
+          check_retype_password();
+       });
+
+       function check_fname() {
+          var pattern = /^[a-zA-Z]*$/;
+          var fname = $("#form_fname").val();
+          if (pattern.test(fname) && fname !== '') {
+             $("#fname_error_message").hide();
+             $("#form_fname").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#fname_error_message").html("Enter only Characters");
+             $("#fname_error_message").show();
+             $("#form_fname").css("border-bottom","2px solid #F90A0A");
+             error_fname = true;
+          }
+          
+       }
+
+       function check_sname() {
+          var pattern = /^[a-zA-Z]*$/;
+          var sname = $("#form_sname").val()
+          if (pattern.test(sname) && sname !== '') {
+             $("#sname_error_message").hide();
+             $("#form_sname").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#sname_error_message").html("Enter only Characters");
+             $("#sname_error_message").show();
+             $("#form_sname").css("border-bottom","2px solid #F90A0A");
+             error_sname = true;
+          }
+       }
+
+       function check_fatherName() {
+          var pattern = /^[a-zA-Z]*$/;
+          var fatherName = $("#form_father_name").val()
+          if (pattern.test(fatherName) && fatherName !== '') {
+             $("#father_name_error_message").hide();
+             $("#form_father_name").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#father_name_error_message").html("Enter only Characters");
+             $("#father_name_error_message").show();
+             $("#form_father_name").css("border-bottom","2px solid #F90A0A");
+             error_fatherName = true;
+          }
+       }
+
+       function check_blocation() {
+          var blocation = $("#form_blocation").val()
+          if (blocation !== '') {
+             $("#blocation_error_message").hide();
+             $("#form_blocation").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#blocation_error_message").html("Select base location");
+             $("#blocation_error_message").show();
+             $("#form_blocation").css("border-bottom","2px solid #F90A0A");
+             error_blocation = true;
+          }
+       }
+
+       function check_maritual() {
+          var maritual = $("#form_maritual").val()
+          if (maritual !== '') {
+             $("#maritual_error_message").hide();
+             $("#form_maritual").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#maritual_error_message").html("Select Maritual");
+             $("#maritual_error_message").show();
+             $("#form_maritual").css("border-bottom","2px solid #F90A0A");
+             error_maritual = true;
+          }
+       }
+
+       function check_permAddr() {
+          var pattern = /^[a-zA-Z]*$/;
+          var permAddr = $("#form_perm_addr").val();
+          if (pattern.test(permAddr) && permAddr !== '') {
+             $("#perm_addr_error_message").hide();
+             $("#form_perm_addr").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#perm_addr_error_message").html("Enter Valid Permanent Address");
+             $("#perm_addr_error_message").show();
+             $("#form_perm_addr").css("border-bottom","2px solid #F90A0A");
+             error_permAddr = true;
+          }
+       }
+
+       function check_permCity() {
+          var pattern = /^[a-zA-Z]*$/;
+          var permCity = $("#form_perm_city").val()
+          if (pattern.test(permCity) &&permCity !== '') {
+             $("#perm_city_error_message").hide();
+             $("#form_perm_city").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#perm_city_error_message").html("Enter Valid Permanent City");
+             $("#perm_city_error_message").show();
+             $("#form_perm_city").css("border-bottom","2px solid #F90A0A");
+             error_permCity = true;
+          }
+       }
+
+       function check_permState() {
+          var pattern = /^[a-zA-Z]*$/;
+          var permState = $("#form_perm_state").val()
+          if (pattern.test(permState) && permState !== '') {
+             $("#perm_state_error_message").hide();
+             $("#form_perm_state").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#perm_state_error_message").html("Enter Valid Permanent State");
+             $("#perm_state_error_message").show();
+             $("#form_perm_state").css("border-bottom","2px solid #F90A0A");
+             error_permState = true;
+          }
+       }
+
+       function check_permPincode() {
+          var pattern = /^[a-zA-Z]*$/;
+          var permPincode = $("#form_perm_pincode").val()
+          if (pattern.test(permPincode) && permPincode !== '') {
+             $("#perm_pincode_error_message").hide();
+             $("#form_perm_pincode").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#perm_pincode_error_message").html("Enter Valid Permanent Pincode");
+             $("#perm_pincode_error_message").show();
+             $("#form_perm_pincode").css("border-bottom","2px solid #F90A0A");
+             error_permPincode = true;
+          }
+       }
+
+       function check_presAddr() {
+          var pattern = /^[a-zA-Z]*$/;
+          var presAddr = $("#form_pres_addr").val();
+          if (pattern.test(presAddr) && presAddr !== '') {
+             $("#pres_addr_error_message").hide();
+             $("#form_pres_addr").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#pres_addr_error_message").html("Enter Valid Present Address");
+             $("#pres_addr_error_message").show();
+             $("#form_pres_addr").css("border-bottom","2px solid #F90A0A");
+             error_presAddr = true;
+          }
+       }
+
+       function check_presCity() {
+          var pattern = /^[a-zA-Z]*$/;
+          var presCity = $("#form_pres_city").val()
+          if (pattern.test(presCity) && presCity !== '') {
+             $("#pres_city_error_message").hide();
+             $("#form_pres_city").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#pres_city_error_message").html("Enter Valid Present City");
+             $("#pres_city_error_message").show();
+             $("#form_pres_city").css("border-bottom","2px solid #F90A0A");
+             error_presCity = true;
+          }
+       }
+
+       function check_presState() {
+          var pattern = /^[a-zA-Z]*$/;
+          var presState = $("#form_pres_state").val()
+          if (pattern.test(presState) && presState !== '') {
+             $("#pres_state_error_message").hide();
+             $("#form_pres_state").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#pres_state_error_message").html("Enter Valid Present State");
+             $("#pres_state_error_message").show();
+             $("#form_pres_state").css("border-bottom","2px solid #F90A0A");
+             error_presState = true;
+          }
+       }
+
+       function check_presPincode() {
+          var pattern = /^[a-zA-Z]*$/;
+          var presPincode = $("#form_pres_pincode").val()
+          if (pattern.test(presPincode) && presPincode !== '') {
+             $("#pres_pincode_error_message").hide();
+             $("#form_pres_pincode").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#pres_pincode_error_message").html("Enter Valid Present Pincode");
+             $("#pres_pincode_error_message").show();
+             $("#form_pres_pincode").css("border-bottom","2px solid #F90A0A");
+             error_presPincode = true;
+          }
+       }
+
+       function check_dob() {
+          var dob = $("#form_dob").val();
+          if (dob !== '') {
+             $("#dob_error_message").hide();
+             $("#form_dob").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#dob_error_message").html("Select DOB");
+             $("#dob_error_message").show();
+             $("#form_dob").css("border-bottom","2px solid #F90A0A");
+             error_dob = true;
+          }
+       }
+
+       function check_doj() {
+          var doj = $("#form_doj").val();
+          if (doj !== '') {
+             $("#doj_error_message").hide();
+             $("#form_doj").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#doj_error_message").html("Select DOJ");
+             $("#doj_error_message").show();
+             $("#form_doj").css("border-bottom","2px solid #F90A0A");
+             error_doj = true;
+          }
+       }
+
+       function check_phone() {
+        var pattern = /^\(?(\d{3})\)?[-\. ]?(\d{3})[-\. ]?(\d{4})$/;
+        var phone = $("#form_phone").val()
+          if (pattern.test(phone) && phone !== '') {
+             $("#phone_error_message").hide();
+             $("#form_phone").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#phone_error_message").html("Enter Phone Number");
+             $("#phone_error_message").show();
+             $("#form_phone").css("border-bottom","2px solid #F90A0A");
+             error_phone = true;
+          }
+       }
+
+       function check_pan() {
+          var pattern = /^[a-zA-Z0-9]*$/;
+          var pan = $("#form_pan").val()
+          if (pattern.test(pan) && pan !== '') {
+             $("#pan_error_message").hide();
+             $("#form_pan").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#pan_error_message").html("Enter Valid PAN");
+             $("#pan_error_message").show();
+             $("#form_pan").css("border-bottom","2px solid #F90A0A");
+             error_pan = true;
+          }
+       }
+
+
+
+       function check_password() {
+          var password_length = $("#form_password").val().length;
+          if (password_length < 8) {
+             $("#password_error_message").html("Atleast 8 Characters");
+             $("#password_error_message").show();
+             $("#form_password").css("border-bottom","2px solid #F90A0A");
+             error_password = true;
+          } else {
+             $("#password_error_message").hide();
+             $("#form_password").css("border-bottom","2px solid #34F458");
+          }
+       }
+
+       function check_email() {
+          var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+          var email = $("#form_email").val();
+          if (pattern.test(email) && email !== '') {
+             $("#email_error_message").hide();
+             $("#form_email").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#email_error_message").html("Invalid Email");
+             $("#email_error_message").show();
+             $("#form_email").css("border-bottom","2px solid #F90A0A");
+             error_email = true;
+          }
+       }
+
+       function check_retype_password() {
+          var password = $("#form_password").val();
+          var retype_password = $("#form_retype_password").val();
+          if (password !== retype_password) {
+             $("#retype_password_error_message").html("Passwords Did not Matched");
+             $("#retype_password_error_message").show();
+             $("#form_retype_password").css("border-bottom","2px solid #F90A0A");
+             error_retype_password = true;
+          } else {
+             $("#retype_password_error_message").hide();
+             $("#form_retype_password").css("border-bottom","2px solid #34F458");
+          }
+       }
+
+       
+
+       $("#registration_form").submit(function(e) {
+          e.preventDefault();
+          error_fname = false;
+          error_sname = false;
+          error_blocation = false;
+          error_fatherName = false;
+          error_maritual = false;
+          error_permAddr = false;
+          error_permCity = false;
+          error_permState = false;
+          error_permPincode = false;
+          error_presAddr = false;
+          error_presCity = false;
+          error_presState = false;
+          error_presPincode = false;
+          error_dob = false;
+          error_doj = false;
+          error_phone = false;
+          error_email = false;
+          error_pan = false;
+          
+
+
+          
+          error_password = false;
+          error_retype_password = false;
+
+          check_fname();
+          check_sname();
+          check_blocation();
+          check_fatherName();
+          check_maritual();
+          check_permAddr();
+          check_permCity();
+          check_permState();
+          check_permPincode();
+          check_presAddr();
+          check_presCity();
+          check_presState();
+          check_presPincode();
+          check_dob();
+          check_doj();
+          check_phone();
+          check_email();
+          check_pan();
+
+          
+          check_password();
+          check_retype_password();
+
+          if (error_fname === false && error_sname === false && error_email === false && error_password === false && error_retype_password === false && error_blocation === false && error_fatherName === false && error_maritual === false && error_permAddr === false && error_permCity === false && error_permState === false && error_permPincode === false && error_presAddr === false && error_presCity === false && error_presState === false && error_presPincode === false && error_dob === false && error_doj === false && error_phone === false && error_email === false && error_pan === false) {
+             alert("Registration Successfull");
+             return true;
+          } else {
+             alert("Please Fill the form Correctly");
+             return false;
+          }
+
+
+       });
+    });
+ </script>
+  
+  <script>
+    new WOW().init();
+    </script>
+  
+  </body>
+</html>

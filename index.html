@@ -16,383 +16,94 @@
   </head>
   <body>
   
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
+  <header id="header" class="sticky-top">
 
-      <h1 class="logo mr-auto mt-1"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Student Joining Link</a></li>
-          <li><a href="hire-master.html">Hiring Master</a></li>
-          <li><a href="login.html">Login</a></li>
+      <div class="container p-0">
+      <nav class="navbar navbar-expand-md p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" style="margin-top: -15px" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a class="nav-link" href="index.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="student.html">Student Joining Link</a></li>
+          <li class="nav-item"><a class="nav-link" href="hire-master.html">Hiring Master</a></li>
         </ul>
+      </div>
+      </div>
       </nav><!-- .nav-menu -->
-
     </div>
   </header><!-- End Header -->
   
-  <section class="student-joining">
+  <section class="student-joining login">
     <div class="container">
-
-      <div class="accordion" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Candidate Form
-              </button>
-            </h2>
+      <div class="row">
+        <div class="col-md-3 info pr-5 pl-5 pt-3">
+          <div class="login-brand">
+            <ul>
+              <li class="wow fadeInDown" data-wow-duration="2s">
+                <div class="icon">
+                  <i class="fa fa-chart-line"></i>
+                </div>
+                <p>Sales, Support & <br/>Marketing</p>
+              </li>
+              <li class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
+                <div class="icon">
+                  <i class="fa fa-users"></i>
+                </div>
+                <p>HR</p>
+              </li>
+              <li class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.5s">
+                <div class="icon">
+                  <i class="fa fa-laptop-code"></i>
+                </div>
+                <p>Course Launch</p>
+              </li>
+              <li class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+                <div class="icon">
+                  <i class="fa fa-file-invoice"></i>
+                </div>
+                <p>KPIs & Reports</p>
+              </li>
+              <li class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="2.5s">
+                <div class="icon">
+                  <img src="images/chatbot.png" alt="chatbot">
+                </div>
+                <p>Introducing Veeru (Chat Bot) Quick Operations, Faster Processes</p>
+              </li>
+            </ul>
           </div>
-      
-          <div>
-            <div class="card-body">
-              <form action="#">
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>First Name</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Middle Name</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>Last Name</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group d-flex flex-wrap">
-                      <label for="formGroupExampleInput" style="width:100%;">Gender</label>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Male
-                        </label>
-                      </div>
-                      <div class="form-check  ml-3">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Female
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>Base Location</label>
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="1">Sample</option>
-                        <option value="2">Sample</option>
-                       
-                      </select>
-                    </div>
-                  </div>
+        </div>
+        <div class="col-md-9 login-form d-flex align-items-center pr-5 pl-5 pt-3 pb-3">
+          <div class="backdrop"></div>
+          <div class="container">
+            <div class="login-block">
+              <span class="border-line"></span>
+              <form id="registration_form">
+                <div class="login-head text-center">
+                  <img src="images/logo.png" class="mb-2" alt="logo">
+                  <div class="form-heading"><h4 class="text-primary text-center">Resource Management <br/>System</h4></div>
                   
                 </div>
-        
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>Father Name</label><br/>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>Maritual Status</label>
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="1">Married</option>
-                        <option value="2">Unmarried</option>
-                       
-                      </select>
-                    </div>
-                  </div>
+                <div class="form-group mb-3" style="margin-top: 30px;">
+                  <input type="email" class="form-control" id="form_email" placeholder="Email address*">
+                  <span class="d-block text-right text-danger"><small class="error_form" id="email_error_message""></small></span>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Password*" id="form_password">
+                  <span class="d-block text-right text-danger"><small class="error_form" id="password_error_message"></small></span>
                   
                 </div>
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>Permanent Address</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>City</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>State</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>Pincode</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>Present Address</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>City</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>State</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>Pincode</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Emergency Name #1</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Phone No #1</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Relation #1</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Emergency Name #2</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Phone No #2</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Relation #2</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>DOB</label>
-                      <input type="date" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>DOJ</label>
-                      <input type="date" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>Personal Email</label>
-                      <input type="email" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>Personal Phone</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Aadhar Card No</label>
-                      <input type="email" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput"><span class="text-danger">*</span>PAN #</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">UAN #</label>
-                      <input type="email" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">ESIC #</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Passport #</label>
-                      <input type="email" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Expiry Date</label>
-                      <input type="date" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Graduation</label><br/>
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="1">Sample</option>
-                        <option value="2">Sample</option>
-                       
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Post Graduation</label><br/>
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="1">Sample</option>
-                        <option value="2">Sample</option>
-                       
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Work Exp.(in Years)</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Voter Id No</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-2 mb-2">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Passport</label>
-                      <input type="file" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Photo</label>
-                      <input type="file" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                </div>
+                <button class="btn btn-primary pt-1 pb-1 mt-3">Submit</button>
+                <span class="rights d-block text-center mt-1">All rights reserved. &#169; 1997 - 2023, Koenig Solutions Ltd.</span>
               </form>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Employee Reference Form
-              </button>
-            </h2>
-          </div>
-          <div>
-            <div class="card-body">
-              <form action="#">
-                <div class="d-flex">
-                  <div>
-                    <div class="form-group mr-2">
-                      <label for="formGroupExampleInput">Name</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div>
-                    <div class="form-group mr-2">
-                      <label for="formGroupExampleInput">Phone</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div>
-                    <div class="form-group mr-2">
-                      <label for="formGroupExampleInput">Email Id</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div>
-                    <div class="form-group mr-2">
-                      <label for="formGroupExampleInput">Company</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                  </div>
-                  <div>
-                    <div class="form-group mr-2">
-                      <label for="formGroupExampleInput">Skill</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" >
-                    </div>
-                    <button class="btn btn-primary pl-3 pr-3 pt-1 pb-1" style="font-size: 13px;">ADD</button>
-                  </div>
-                </div>
-                
-              </form>
-            </div>
-          </div>
-        </div>
-        
       </div>
-      <div class="col-md-12 text-right">
-        <button class="btn btn-primary pt-1 pb-1 pr-3 pl-3 mt-3" style="font-size: 13px;">Final Submit</button>
-      </div>
-
-
-      
     </div>
   </section>
 
@@ -403,18 +114,74 @@
 	<script src="js/fontawesome.min.js" type="text/javascript"></script>
 	<script src="js/wow.min.js" type="text/javascript"></script>
   
-
-   <script>
-    $(document).ready(function(){                       
-      $('ul li a').click(function(){
-        $('li a').removeClass("active");
-        $(this).addClass("active");
-      });
-    });
-    </script>
-
+  <script>
+  new WOW().init();
+  </script>
   
-   
+  <script type="text/javascript">
+    $(function() {
+
+       $("#email_error_message").hide();
+       $("#password_error_message").hide();
+
+       var error_email = false;
+       var error_password = false;
+
+       $("#form_email").focusout(function() {
+          check_email();
+       });
+       $("#form_password").focusout(function() {
+          check_password();
+       });
+ 
+
+       function check_password() {
+          var password_length = $("#form_password").val().length;
+          if (password_length < 8) {
+             $("#password_error_message").html("Atleast 8 Characters");
+             $("#password_error_message").show();
+             $("#form_password").css("border-bottom","2px solid #F90A0A");
+             error_password = true;
+          } else {
+             $("#password_error_message").hide();
+             $("#form_password").css("border-bottom","2px solid #34F458");
+          }
+       }
+
+
+       function check_email() {
+          var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+          var email = $("#form_email").val();
+          if (pattern.test(email) && email !== '') {
+             $("#email_error_message").hide();
+             $("#form_email").css("border-bottom","2px solid #34F458");
+          } else {
+             $("#email_error_message").html("Invalid Email");
+             $("#email_error_message").show();
+             $("#form_email").css("border-bottom","2px solid #F90A0A");
+             error_email = true;
+          }
+       }
+
+       $("#registration_form").submit(function() {
+          error_email = false;
+          error_password = false;
+        
+          check_email();
+          check_password();
+
+          if (error_email === false && error_password === false) {
+             alert("Registration Successfull");
+             return true;
+          } else {
+             alert("Please Fill the form Correctly");
+             return false;
+          }
+
+
+       });
+    });
+ </script>
   
   </body>
 </html>
